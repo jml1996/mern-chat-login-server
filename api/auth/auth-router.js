@@ -74,4 +74,12 @@ router.get("/users", restrict, (req, res) => {
     .catch(err => res.send(err))
 })
 
+// router.get("/users", (req, res) => {
+//   User.getUser()
+//   .then(users => {
+//       res.status(200).json(users)
+//   })
+//   .catch(err => res.send(err))
+// })
+
 module.exports = router
